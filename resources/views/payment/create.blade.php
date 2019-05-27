@@ -5,7 +5,7 @@
         <form action="{{ route('payment.store') }}" method="post">
             @csrf
 
-            <input type="submit" value="Pay">
+            <input class="block px-3 py-4 block uppercase tracking-wide  rounded bg-blue text-white font-bold hover:bg-blue-dark no-underline" type="submit" value="Click Here to Make Payment">
 
         </form>
     </div>

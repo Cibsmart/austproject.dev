@@ -11,6 +11,10 @@
 |
 */
 
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -33,4 +37,3 @@ Route::post('payment', 'PaymentController@store')->name('payment.store');
 Auth::routes();
 
 Route::get('home', 'ApplicationController@index')->name('home');
-

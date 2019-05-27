@@ -94,11 +94,11 @@
                                 <td class="py-3 px-4 border-b border-grey-light text-grey-darker">
                                     @if($documents->contains('document_type_id', $document_type->id))
                                         <span class="text-green-dark">
-                                        {{ _('Uploaded') }}
+                                            Uploaded
                                         </span>
                                     @else
                                         <span class="text-red-dark">
-                                        {{ _('Yet to be Uploaded') }}
+                                            Yet to be Uploaded
                                         </span>
                                     @endif
                                 </td>

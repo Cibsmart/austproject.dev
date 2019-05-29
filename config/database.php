@@ -4,9 +4,9 @@ use Illuminate\Support\Str;
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
+$host = $url["host"] ?? 'localhost';
+$username = $url["user"] ?? 'forge';
+$password = $url["pass"] ?? 'forge';
 $database = substr($url["path"], 1);
 
 return [

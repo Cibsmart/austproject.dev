@@ -69,7 +69,7 @@ class ApplicationForm extends FormRequest
 
     public function persist()
     {
-        $max_id = Application::max('id') ?? 1;
+        $max_id = Application::max('id') + 1 ?? 1;
 
         $max_id = str_pad($max_id, 5, '0', STR_PAD_LEFT);
 
